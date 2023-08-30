@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="test2.css">
+      <title>Portfolio Website</title>
+      <style>
+            .content {
+                  flex-direction: row;
+                  display: flex;
+            }
+
+            .content>div {
+                  display: flex;
+                  flex: 1;
+                  align-content: center;
+                  justify-content: center;
+            }
+
+            .table_person {
+                  border: 5px ridge black;
+            }
+
+            footer>p {
+                  text-align: end;
+                  justify-content: flex-end;
+            }
+      </style>
+</head>
+
+<body>
+      <nav class="container">
+            <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
+                  class="logo" width="40" height="40" />
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+      </nav>
+      <main>
+            <section class="home">
+                  <h1><span id="nickname"></span>Welcome to the website!</h1>
+                  <p>This is my practice website</p>
+                  <center> <img
+                              src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
+                              class="logo" width="200" height="200" /> </center>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section>
+                  <center>
+                        <h1>Our Facilities</h1>
+                  </center>
+                  <section class="facility">
+                        <div>
+                              <img id="facility"
+                                    src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
+                                    class="logo" width="100" height="100" />
+                              <p>Professional Teacher</p>
+                        </div>
+                        <div>
+                              <img id="facility"
+                                    src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
+                                    class="logo" width="100" height="100" />
+                              <p>Sport Field</p>
+                        </div>
+                        <div>
+                              <img id="facility"
+                                    src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
+                                    class="logo" width="100" height="100" />
+                              <p>Classroom</p>
+                        </div>
+                  </section>
+            </section>
+            <br>
+            <hr>
+            <section class="message">
+                  <center><h1>Message Us</h1></center>
+                  <form name="messageUs">
+                        <label for="name">Full Name:</label>
+                        <input id="name" type="text" placeholder="Name" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" placeholder="Email" required>
+                        <br>
+                        <label for="phone">Phone Number:</label>
+                        <input id="phone" type="number" placeholder="Phone Number" required>
+                        <br>
+                        <label for="birth">Date of Birth:</label>
+                        <input id="birth" type="date" required>
+                        <br>
+                        <label class="label-gender">Gender:</label>
+                        <div class="gender-options">
+                              <input id="women" type="radio" name="gender" value="women">
+                              <label for="women">Women</label>
+                              <input id="men" type="radio" name="gender" value="men">
+                              <label for="men">Men</label>
+                        </div>
+                        <br>
+                        <label for="message">Message:</label>
+                        <textarea rows="10" cols="50" required></textarea>
+                        <br>
+                        <button id="submit" type="submit">Submit</button>
+                        <p id="error"></p>
+                  </form>
+                  <div id="senderInfo" style="display: none;">
+                        <p>
+                              <span id="senderName"></span><br>
+                              <span id="senderEmail"></span><br>
+                              <span id="senderPhone"></span><br>
+                              <span id="senderBirth"></span><br>
+                              <span id="senderGender"></span><br>
+                              <span id="senderMessage"></span><br>
+                        </p>
+                  </div>
+                  <br>
+                  <hr>
+
+            </section>
+      </main>
+      <footer>created by: Muhammad Habib</footer>
+      <script src="test2.js"></script>
+</body>
+
+</html>
